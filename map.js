@@ -35,7 +35,7 @@ function getLocality(lat, long, id){
     return fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${long}&localityLanguage=en`)
         .then(response => {return response.json()})
         .then(data => {
-            document.getElementById(id).innerHTML += "Locality: " + data.locality
+            document.getElementById(id).innerHTML += "<p>Locality: " + data.locality + "</p>"
         });
 
 }

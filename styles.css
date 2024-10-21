@@ -2,3 +2,7 @@
     height: 400px;
     width: 800px;
 }
+
+p {
+    font-weight: 900;
+}
